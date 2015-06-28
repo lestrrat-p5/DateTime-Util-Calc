@@ -3,6 +3,10 @@ Changes
 
 Unless otherwise noted, all changes by Daisuke Maki.
 
+0.13003 Sun 28 Jun 2015
+  - Fix tests for newer perls
+  - Note that this module isn't really maintained
+
 0.13002 Wed 30 May 2007
   - Don't inherit from Exporter
   - Update POD tests

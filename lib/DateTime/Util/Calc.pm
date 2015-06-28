@@ -1,6 +1,6 @@
 # $Id: /local/datetime/modules/DateTime-Util-Calc/trunk/lib/DateTime/Util/Calc.pm 11779 2007-05-29T22:12:48.788920Z daisuke  $
 #
-# Copyright (c) 2004-2007 Daisuke Maki <daisuke@endeworks.jp>
+# Copyright (c) 2004-2015 Daisuke Maki <daisuke@endeworks.jp>
 
 package DateTime::Util::Calc;
 use strict;
@@ -20,7 +20,7 @@ use vars qw($DOWNGRADE_ACCURACY);
 BEGIN
 {
     *import = \&Exporter::import;
-    $VERSION = '0.13002';
+    $VERSION = '0.13003';
     @EXPORT_OK = qw(
         bf_downgrade
         bi_downgrade
@@ -281,6 +281,9 @@ but they are not realistic for anything more complicated... like calendars.
 If you need an astronomical calendar, use C (and/or provide a very thing
 Perl wrapper over it)
 
+Because the author has reached the above conclusion, this module should really
+be considered deprecated. It will NOT be maintained regularly.
+
 =head1 DESCRIPTION
 
 This module contains some common calculation utilities that are required
@@ -464,7 +467,7 @@ Reduces input to within +180..+180 degrees
 
 =head1 AUTHOR
 
-Copyright (c) 2004-2007 Daisuke Maki E<lt>daisuke@endeworks.jpE<gt>
+Copyright (c) 2004-2015 Daisuke Maki E<lt>daisuke@endeworks.jpE<gt>
 
 =cut
 
