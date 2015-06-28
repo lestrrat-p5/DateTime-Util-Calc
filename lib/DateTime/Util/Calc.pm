@@ -274,6 +274,13 @@ DateTime::Util::Calc - DateTime Calculation Utilities
   my $x      = 5;
   my $rv     = polynomial($x, @coeffs);
 
+=head1 DEPRECATION WARNING
+
+You really should not be using this module. Math::BigInt nad friends are fine,
+but they are not realistic for anything more complicated... like calendars.
+If you need an astronomical calendar, use C (and/or provide a very thing
+Perl wrapper over it)
+
 =head1 DESCRIPTION
 
 This module contains some common calculation utilities that are required
