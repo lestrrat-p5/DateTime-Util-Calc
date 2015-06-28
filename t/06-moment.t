@@ -4,8 +4,8 @@ use Test::More tests => 32;
 
 BEGIN
 {
-	use_ok('DateTime::Util::Calc', 'moment', 'dt_from_moment');
-	use_ok('DateTime');
+    use_ok('DateTime::Util::Calc', 'moment', 'dt_from_moment');
+    use_ok('DateTime');
 }
 
 # generate $n random dates, and calculate moment values from each
@@ -16,7 +16,7 @@ for (1..5) {
         time_zone => 'Asia/Tokyo');
 
     # the results should be the same regardless of time zone
-    for my $tz qw(US/Pacific UTC) {
+    for my $tz (qw(US/Pacific UTC)) {
         my $dt = $ref->clone;
         $dt->set_time_zone($tz);
 
